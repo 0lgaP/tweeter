@@ -8,18 +8,22 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  
 }
 
+
 /*
- * Global layout stuff
- */
+* Global layout stuff
+*/
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #dbd14f;
+  background-color: #256990;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+

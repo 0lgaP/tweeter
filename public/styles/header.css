@@ -1,0 +1,15 @@
+header {
+  z-index: 0;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background-color: #b36200;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+
+}
+
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
