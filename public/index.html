@@ -39,31 +39,74 @@
     </nav>
     
     <header>
-      <div>
-        <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
+        <img class="profile-img" src="/images/profile-hex.png"> 
         <p class="your-name"><strong>Your</strong> Name</p>
-      </div>
     </header>
     
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section>
+
         <div class="upper-tweet">
-          <form action="/tweets" method="post">
+          <form action="" method="post">
             <label for="textarea">What are you humming about?</label>
             <textarea name="text" id="tweet-text" ></textarea>
           </div>
-          
-          <div class="lower-tweet"> 
+          <footer class="lower-tweet"> 
             <button type="submit" id="myButton">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
+            <output name="counter" class="counter" id="output" for="tweet-text">140</output>
+          </footer>
         </form>
-        
-        
+      </section>
+      <section>
+        <article class="tweet">
+          <header>
+            <article class="icon-holder">
+              <div class="credentials">
+                <img class="icon" src="/images/profile-hex.png">
+                <span>Your Name</span>
+              </div>
+              <span>@username</span>
+            </article>
+              <div class="tweet-text">
+                <p>sladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgdssladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgdssladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgds</p>
+              </div>
+          </header>
+          <footer>
+            <span>10 days ago</span>
+            <div>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+          </footer>
+        </article>
+
+        <article class="tweet">
+          <header>
+            <article class="icon-holder">
+              <div class="credentials">
+                <img class="icon" src="/images/profile-hex.png">
+                <span>Your Name</span>
+              </div>
+              <span>@username</span>
+            </article>
+              <div class="tweet-text">
+                <p>sladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgdssladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgdssladsagdjgldjsajgjdgjasdgjsdgjsdgfjasdgfjgds</p>
+              </div>
+          </header>
+          <footer>
+            <span>10 days ago</span>
+            <div>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+          </footer>
+        </article>
+
       </section>
       
     </main>
