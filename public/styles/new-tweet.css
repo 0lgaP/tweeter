@@ -4,36 +4,16 @@ button {
   color: #FFFFFF;
 }
 
-.new-tweet {
-  margin: 1rem;
-
+section {
 
   align-items: center;
-
   display: flex;
   background-color: #256990;
-
   width: 90%;
   flex-direction: column;
 
 }
-form {
-
-  width: 100%;
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
-  justify-content: center;
-  
-}
-label {
-
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  color: rgb(71, 36, 36);
-}
-
+/* NewTweet UPPER ..............................................................................*/
 .upper-tweet {
   padding: 2% 2% 0.5%;
   display: flex;
@@ -41,35 +21,135 @@ label {
   flex-direction: column;
   align-items: baseline;
   background-color: bisque;
-  border-bottom: black solid 2px;
 
-
+  
 }
-.lower-tweet {
 
+form {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: rgb(71, 36, 36);
+}
+
+textarea {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 4rem;
+  background-color: bisque;
+  border: none;
+  color: rgb(71, 36, 36);
+  border-bottom: rgb(71, 36, 36) solid 4px ;
+  outline: unset;
+}
+
+/* NewTweet LOWER..............................................................................*/
+
+.lower-tweet {
   width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: bisque;
   padding: 0.5% 2% 1%;
-
 }
 
-textarea {
-
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-
-
- height: 4rem;
- background-color: bisque;
- border: none;
- color: rgb(71, 36, 36);
-
-}
-
-output {
+.counter {
   font-family: 'Bungee';
   font-weight: bold;
   color: rgb(88, 70, 70);
 }
+
+.counterNegative {
+  font-family: 'Bungee';
+  font-weight: bold;
+  color: rgb(155, 9, 9);
+}
+
+/*OldTweet ..............................................................................*/
+
+article.tweet {
+  background-color: bisque;
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: baseline;
+
+}
+article.tweet header {
+  padding: 2% 2% 0 2%;
+  height:unset;
+  background-image: none;
+  background-color: bisque;
+  border-top: rgb(71, 36, 36) solid 4px;
+  border-left: rgb(71, 36, 36) solid 4px;
+  border-right: rgb(71, 36, 36) solid 4px;
+  justify-content: flex-start;
+
+}
+.tweet-text {
+  width: 100%;
+  color: rgb(71, 36, 36);
+  font-size: 24px;
+  font-weight: bold;
+  inline-size: 100%;
+  word-wrap: break-word;
+  border-bottom: rgb(71, 36, 36) solid 4px;;
+
+}
+img.icon {
+  width: 30%;
+}
+ header > article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+
+ }
+
+article.tweet footer {
+  color: rgb(71, 36, 36);
+  background-color: bisque;
+  border-bottom: rgb(71, 36, 36) solid 4px;
+  border-left: rgb(71, 36, 36) solid 4px;
+  border-right: rgb(71, 36, 36) solid 4px;
+  display: flex;
+  align-items:flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+  font-size: 20px;
+
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
+  color: rgb(71, 36, 36);
+  
+}
+
+.icon-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  color: rgb(71, 36, 36);
+}
+
+i:hover {
+  color: #4056A1;
+}
+
