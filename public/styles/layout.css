@@ -17,10 +17,32 @@ html {
 */
 
 body {
+
+
   color: #dbd14f;
   background-color: #256990;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+main.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+  background-color: #256990;
+}
+
+.new-tweet {
+  display: flex;
+  background-color: #256990;
+
+  width: 90%;
+  flex-direction: column;
+
 }
 
 /*
