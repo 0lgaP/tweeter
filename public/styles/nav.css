@@ -20,11 +20,16 @@ nav {
 
 nav > span {
   font-family: 'Bungee';
+  font-size: 2rem;
+  
 }
 i {
   color: rgb(255, 0, 43, 0.8);
 }
 
+.white {
+  color: #FFFFFF;
+}
 
 .right-section {
 
