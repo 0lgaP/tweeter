@@ -84,6 +84,8 @@ button {
   display: flex;
   flex-direction: column;
   border: rgb(71, 36, 36) solid 4px;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 header > article.old-tweet {
@@ -109,13 +111,19 @@ div.tweet-container:hover {
   align-items: center;
 }
 
+.icon-holder span {
+  font-size: 2rem;
+}
+
 .icon {
-  width: 30%;
+  padding-right: 0.5rem;
 }
 
 .tweet-text {
   font-weight: bold;
-  border-bottom: rgb(71, 36, 36) solid 4px;;
+  border-bottom: rgb(71, 36, 36) solid 4px;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 i:hover {
