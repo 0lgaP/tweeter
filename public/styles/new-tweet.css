@@ -1,20 +1,15 @@
 /* Top to bottom */
 
-button {
-  font-family: 'Bungee';
-  background-color: #4056A1;
-  color: #FFFFFF;
-}
+/* Constainer ...................................................................................*/
 
 section {
-
   align-items: center;
   display: flex;
   background-color: #4056A1;
   width: 90%;
-  flex-direction: column;
-
+  flex-direction: column; 
 }
+
 
 /* NewTweet UPPER ..............................................................................*/
 .upper-tweet {
@@ -24,29 +19,22 @@ section {
   flex-direction: column;
   align-items: baseline;
   background-color: bisque;
-
-  
 }
 
 form {
   width: 100%;
-  /* display: flex;
-  align-items: baseline;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 label {
-  /* width: 100%;
-  font-family: 'Source Sans Pro', sans-serif; */
   font-weight: bold;
-  /* color: rgb(71, 36, 36); */
 }
+
+/* Textarea is special, 
+re-used css is needed here beccause 
+it is overriding defalt behaviours */
 
 textarea {
   width: 100%;
-  /* font-family: 'Source Sans Pro', sans-serif; */
-  /* height: 4rem; */
   background-color: bisque;
   border: none;
   color: rgb(71, 36, 36);
@@ -64,10 +52,15 @@ textarea {
   padding: 0.5% 2% 1%;
 }
 
+button {
+  font-family: 'Bungee';
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
 .counter {
   font-family: 'Bungee';
   font-weight: bold;
-  /* color: rgb(88, 70, 70); */
 }
 
 .counterNegative {
@@ -78,29 +71,58 @@ textarea {
 
 /*OldTweet ..............................................................................*/
 
-.tweet-container{
-  /* background-color: bisque; */
-  display: flex;
-  flex-direction: column;
-  /* align-items: baseline; */
-  border: rgb(71, 36, 36) solid 4px;
-}
-
-article.tweet {
+.old-tweet {
   background-color: bisque;
   padding: 2%;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: baseline;
-
 }
 
-div.tweet-container:hover{
+.tweet-container{
+  display: flex;
+  flex-direction: column;
+  border: rgb(71, 36, 36) solid 4px;
+}
+
+header > article.old-tweet {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%
+}
+
+div.tweet-container:hover {
   filter: drop-shadow(10px 10px 4px #444449);
 }
 
-article.tweet header {
+.icon-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30%;
+}
+
+.tweet-text {
+  font-weight: bold;
+  border-bottom: rgb(71, 36, 36) solid 4px;;
+}
+
+i:hover {
+  color: #4056A1;
+}
+
+.old-tweet header {
   padding: 2% 2% 0 2%;
   height:unset;
   background-image: none;
@@ -108,58 +130,15 @@ article.tweet header {
   justify-content: flex-start;
 
 }
-.tweet-text {
-  /* width: 100%; */
-  /* color: rgb(71, 36, 36); */
-  /* font-size: 24px; */
-  font-weight: bold;
-  /* inline-size: 100%; */
-  /* word-wrap: break-word; */
-  border-bottom: rgb(71, 36, 36) solid 4px;;
 
-}
-img.icon {
-  width: 30%;
-}
- header > article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%
-
- }
-
-article.tweet footer {
-  /* color: rgb(71, 36, 36); */
+.old-tweet footer {
   background-color: bisque;
   display: flex;
-  /* align-items:flex-start; */
-  /* flex-direction: row; */
   justify-content: space-between;
-  /* width: 100%; */
   padding: 2%;
   font-size: 20px;
-
 }
 
-.credentials {
-  display: flex;
-  align-items: center;
-  /* color: rgb(71, 36, 36); */
-  
-}
 
-.icon-holder {
-  /* display: flex;
-  align-items: center; */
-  justify-content: space-between;
-}
 
-/* span {
-  color: rgb(71, 36, 36);
-} */
-
-i:hover {
-  color: #4056A1;
-}
 
