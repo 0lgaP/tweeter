@@ -9,6 +9,24 @@
 
 $(() => {
 
+// LOAD TWEETS .......................................................................//
+const loadTweets = () => {
+  $.ajax({
+    url: "/tweets",
+    method: "GET",
+    // dataType: "json",
+    success: (tweets) => {
+      console.log("data:", tweets)
+      renderTweets(tweets);
+
+    },
+    error: (err) => {
+      console.log(`there was an error: ${err}`)
+    }
+  })
+}
+
+loadTweets();
 
 // Fake data taken from initial-tweets.json
 const data = [
@@ -82,6 +100,29 @@ const createTweetElement = (obj) => {
   }
 
 
-  renderTweets(data);
+// ON SUBMIT ...........................................................................//
+
+$form.on("submit", function(event) {
+  event.preventDefault();
+  const serializedData = $(this).serialize();
+  const $tweetx = $('#tweet-text')
+  const tweetlength = $tweetx.val().length; 
+  
+ if ($tweetx.val() === "" || $tweetx.val() === null) {
+    alert("person of few words eh? Please come up with atleast one before posting")
+   }
+ 
+ if(tweetlength > 140) {
+     return alert("Yon tweet be too long, doeth shorteneth yon story", serializedData.length)
+   } 
+   
+ $.post("/tweets", serializedData, (response) => {
+   $tweetx.val("").empty();
+   console.log(response);
+   console.log('form was submitted');
+   loadTweets()
+ })
+  
+ })
 
 });
