@@ -74,6 +74,8 @@ const createTweetElement = (obj) => {
     }
   }
 
+//Access the form and save it as a jquery-esque const//
+const $form = $("#new-tweet-form");
 
 // ON SUBMIT ...........................................................................//
 
@@ -83,21 +85,20 @@ $form.on("submit", function(event) {
   const $tweetx = $('#tweet-text')
   const tweetlength = $tweetx.val().length; 
   
- if ($tweetx.val() === "" || $tweetx.val() === null) {
-    alert("person of few words eh? Please come up with atleast one before posting")
-   }
- 
- if(tweetlength > 140) {
-     return alert("Yon tweet be too long, doeth shorteneth yon story", serializedData.length)
-   } 
-   
- $.post("/tweets", serializedData, (response) => {
-   $tweetx.val("").empty();
-   console.log(response);
-   console.log('form was submitted');
-   loadTweets()
- })
+  if ($tweetx.val() === "" || $tweetx.val() === null) {
+      alert("person of few words eh? Please come up with atleast one before posting")
+    }
   
+  if(tweetlength > 140) {
+      return alert("Yon tweet be too long, doeth shorteneth yon story", serializedData.length)
+    } 
+    
+  $.post("/tweets", serializedData, (response) => {
+    $tweetx.val("").empty();
+    console.log(response);
+    console.log('form was submitted');
+    loadTweets()
+  })
  })
 
 });

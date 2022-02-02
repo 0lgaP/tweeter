@@ -23,6 +23,9 @@
     
     <!-- External JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
   
   <body>
@@ -48,9 +51,9 @@
       <br>
       <section>
         <div class="upper-tweet">
-          <form action="" method="post">
+          <form action="/tweets" method="post" id="new-tweet-form">
             <label for="textarea">What are you humming about?</label>
-            <textarea name="text" id="tweet-text" ></textarea>
+            <textarea name="text" id="tweet-text"></textarea>
           </div>
           <footer class="lower-tweet"> 
             <button type="submit" id="myButton">Tweet</button>
@@ -60,58 +63,8 @@
       </section>
       <section>
         <article class="old-tweet">
-            <div class="tweet-container">
-              <header>
-                <article class="icon-holder">
-                  <div class="credentials">
-                    <img class="icon" src="/images/profile-hex.png">
-                    <span>Your Name</span>
-                  </div>
-                  <span>@username</span>
-                </article>
-                  <div class="tweet-text">
-                    <p>Woa, that kid was going to have so few pants on after we got done suing them off 'em. And now they gonna strut around all one-panted waving their pant-covered legs in our faces.</p>
-                  </div>
-              </header>
-              <footer>
-                <span>10 days ago</span>
-                  <div>
-                    <i class="fa-solid fa-flag"></i>
-                    <i class="fa-solid fa-retweet"></i>
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                </footer>
-            </div>
-          </article>
-
-          <article class="old-tweet">
-            <div class="tweet-container">
-              <header>
-                <article class="icon-holder">
-                  <div class="credentials">
-                    <img class="icon" src="/images/profile-hex.png">
-                    <span>Your Name</span>
-                  </div>
-                  <span>@username</span>
-                </article>
-                  <div class="tweet-text">
-                    <p>The Oneitude is directly proportional to the Colditude of the One. Or in other words: The colder it is, the more of a one it is.</p>
-                  </div>
-              </header>
-              <footer>
-                <span>10 days ago</span>
-                  <div>
-                    <i class="fa-solid fa-flag"></i>
-                    <i class="fa-solid fa-retweet"></i>
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                </footer>
-            </div>
-          </article>
-
-
+        </article>
       </section>
-      
     </main>
     
     <!-- App JS -->
