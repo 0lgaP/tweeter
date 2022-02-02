@@ -18,7 +18,7 @@ const loadTweets = () => {
     success: (tweets) => {
       console.log("data:", tweets)
       renderTweets(tweets);
-
+      
     },
     error: (err) => {
       console.log(`there was an error: ${err}`)
@@ -29,10 +29,19 @@ const loadTweets = () => {
 loadTweets();
 
 
+//VULNERABILITY.........................................................................//
+//escape only works on the way out, if you put it into the form, you will break her!
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 
 
 // CREATE TWEET ELEMENT ..............................................................//
 const createTweetElement = (obj) => {
+
   const $time = timeago.format(obj.created_at);
   const $tweet = `<div class="tweet-container">
   <header>
@@ -44,7 +53,7 @@ const createTweetElement = (obj) => {
   <span>${obj.user.handle}</span>
   </article>
   <div class="tweet-text">
-  <p>${obj.content.text}</p>
+  <p>${escape(obj.content.text)}</p>
   </div>
   </header>
   <footer>
@@ -77,13 +86,24 @@ const createTweetElement = (obj) => {
 //Access the form and save it as a jquery-esque const//
 const $form = $("#new-tweet-form");
 
+
+// const escape = function (str) {
+//   let div = document.createElement("div");
+//   div.appendChild(document.createTextNode(str));
+//   return div.innerHTML;
+// };
+
+// const safeHTML = `<p>${escape(textFromUser)}</p>`;
+
+
 // ON SUBMIT ...........................................................................//
 
 $form.on("submit", function(event) {
   event.preventDefault();
-  const serializedData = $(this).serialize();
   const $tweetx = $('#tweet-text')
   const tweetlength = $tweetx.val().length; 
+
+  const serializedData = $(this).serialize();
   
   if ($tweetx.val() === "" || $tweetx.val() === null) {
       alert("person of few words eh? Please come up with atleast one before posting")
