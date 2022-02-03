@@ -48,26 +48,24 @@
     
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section>
-        <div class="upper-tweet">
-          <div id="display-error">
+        <article class="new-tweet-container">
+          <div class="upper-tweet">
+            <div id="display-error">
+            </div>
           </div>
-        </div>
-        <div class="upper-tweet">
-          <form action="/tweets" method="post" id="new-tweet-form">
-            <label for="textarea">What are you humming about?</label>
-            <textarea name="text" id="tweet-text"></textarea>
+          <div class="upper-tweet">
+            <form action="/tweets" method="post" id="new-tweet-form">
+              <label for="textarea">What are you humming about?</label>
+              <textarea name="text" id="tweet-text"></textarea>
+              <footer class="lower-tweet"> 
+                <button type="submit" id="myButton">Tweet</button>
+                <output name="counter" class="counter" id="output" for="tweet-text">140</output>
+              </footer>
+            </form>
           </div>
-          <footer class="lower-tweet"> 
-            <button type="submit" id="myButton">Tweet</button>
-            <output name="counter" class="counter" id="output" for="tweet-text">140</output>
-          </footer>
-        </form>
-      </section>
-      <section>
+        </article>
         <article class="old-tweet">
         </article>
-      </section>
     </main>
     
     <!-- App JS -->

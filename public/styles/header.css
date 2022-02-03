@@ -1,29 +1,95 @@
-header {
-  z-index: 0;
-  padding-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 400px;
-  width: 100%;
-  background-color: #4056A1;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+
+
+
+  header {
+    z-index: 0;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    width: 100%;
+    background-color: #d69822;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  
+  }
+  
+  .your-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+  }
+  
+  .profile-img {
+    height: 55%;
+    width: auto;
+  
+  }
+  
+
+/*media queries are only for desctop version - only the changes go in medQ
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 769px) {
+  body {
+    display: flex;
+    margin: 10rem 0 0 0;
+    justify-content: space-around;
+  }
+
+  header {
+ 
+    left: 2vmin;
+    z-index: 0;
+    margin: 3vmin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vmin;
+    width: 40vmin;
+ 
+  
+  }
+  
+
+
+  .your-name {
+    font-size: 5vmin;
+    margin: 0;
+    color: white;
+    padding-bottom: 0.2vmin;
+  }
+  
+  .profile-img {
+    margin-top: 2vmin;
+    height: auto;
+    width: relative;
+
+  
+  }
+
+
+
 
 }
 
-.your-name {
-  font-size: 1.5em;
-  margin: 0;
-  color: bisque;
+/* Another tablet breakpoint is maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Write CSS rules that target Tablets screen sizes downwards - including smartphones */
 }
 
-.profile-img {
-  height: 55%;
-  width: auto;
-
+/* Another tablet breakpoint is minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
 }
 
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+}
 
-/* This is mostly intended for prototyping; please download the pattern and re-host 
-for production environments. Thank you! */
+/* Laptops / Desktops: minimum width of 960px */
+@media only screen and (min-width: 960px) {
+  /* Write CSS rules that target small laptop screen sizes and beyond */
+}

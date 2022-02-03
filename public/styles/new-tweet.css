@@ -1,19 +1,26 @@
 /* Top to bottom */
 
-/* Constainer ...................................................................................*/
+/* Container ...................................................................................*/
 
 section {
   align-items: center;
   display: flex;
-  background-color: #4056A1;
+  background-color: bisque;
   width: 90%;
-  flex-direction: column; 
+  /* flex-direction: column;  */
 }
 
+.new-tweet-container {
+  width: 95.5%;
+  padding:0.3em 0;
+}
+.new-tweet-container:hover { 
+  filter: drop-shadow(10px 10px 4px #444449);
+}
 
 /* NewTweet UPPER ..............................................................................*/
 .upper-tweet {
-  padding: 2% 2% 0.5%;
+  padding: 2% 0.5%;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -27,6 +34,7 @@ form {
 
 label {
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 /* Textarea is special, 
@@ -109,6 +117,7 @@ div.tweet-container:hover {
 .credentials {
   display: flex;
   align-items: center;
+
 }
 
 .icon-holder span {
@@ -130,7 +139,7 @@ i:hover {
   color: #4056A1;
 }
 
-.old-tweet header {
+.old-tweet div {
   padding: 2% 2% 0 2%;
   height:unset;
   background-image: none;
@@ -153,20 +162,29 @@ i:hover {
 {
 
 width: 100%;
-padding: 1.5rem;
-font-size: 1.5rem;
-background-color: bisque;
+padding: 0.5em;
+font-size: 1.3em;
 text-align: center;
-color: rgb(255, 0, 43, 0.8);
 font-weight: bold;
-font-size: 2.5rem;
 word-wrap:break-word;
-border-radius: 1rem;
-border: rgb(255, 0, 43, 0.8) solid 0.5rem;
+border-radius: 1em;
+border: rgba(255, 0, 43, 0.425) solid 0.5rem;
+background:rgba(255, 0, 43, 0.377)
 
 }
 
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 769px) {
 
+  section {
+    align-items: center;
+    display: flex;
+    width: 90%;
+    flex-direction: column; 
+  }
+  
+  
+}
 
 
 

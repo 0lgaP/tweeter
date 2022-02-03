@@ -48,7 +48,7 @@ const createTweetElement = (obj) => {
   
   const $time = timeago.format(obj.created_at);
   const $tweet = `<div class="tweet-container">
-  <header>
+  <div>
   <article class="icon-holder">
   <div class="credentials">
   <img class="icon" id="tweet-credential-icon" src="${obj.user.avatars}">
@@ -59,7 +59,7 @@ const createTweetElement = (obj) => {
   <div class="tweet-text">
   <p>${escape(obj.content.text)}</p>
   </div>
-  </header>
+  </div>
   <footer>
   <span>${$time}</span>
   <div>
@@ -107,7 +107,7 @@ const $form = $("#new-tweet-form");
     const serializedData = $(this).serialize();
     
     if ($tweetx.val() === "" || $tweetx.val() === null) {
-      const errorShow = showError("&#x1f64a"+ " Please type some words")
+      const errorShow = showError("&#x1f64a"+ " Please type some words " + "&#x1f64a")
       $('#display-error').show("slow").slideDown()
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide()
@@ -115,7 +115,7 @@ const $form = $("#new-tweet-form");
     }
     
     if(tweetlength > 140) {
-      const errorShow = showError("&#128585" + " Yon tweet be too long, doeth shorteneth yon story")
+      const errorShow = showError("&#128585" + " This story is too long " + "&#128585")
       $('#display-error').show("slow").slideDown()
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide()
