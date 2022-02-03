@@ -18,7 +18,7 @@ $(() => {
    $.ajax({
      url: "/tweets",
      method: "GET",
-     // dataType: "json",
+     dataType: "json",
      success: (tweets) => {
        console.log("data:", tweets)
        renderTweets(tweets);
