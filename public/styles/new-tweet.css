@@ -148,5 +148,20 @@ i:hover {
 }
 
 
+/* ERROR HANDLING ...................................*/
+#display-error
+{
+width: 100%;
+padding: 1.5rem;
+font-size: 1.5rem;
+background-color: rgb(211, 0, 0);
+text-align: center;
+color: #304074;
+font-weight: bold;
+word-wrap:break-word;
+
+}
+
+
 
 
