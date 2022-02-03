@@ -108,9 +108,7 @@ const $form = $("#new-tweet-form");
     
     if ($tweetx.val() === "" || $tweetx.val() === null) {
       const errorShow = showError("&#x1f64a"+ " Please type some words")
-      $('#display-error').show().animate({
-        
-      })
+      $('#display-error').show("slow").slideDown()
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide()
       })
@@ -118,18 +116,20 @@ const $form = $("#new-tweet-form");
     
     if(tweetlength > 140) {
       const errorShow = showError("&#128585" + " Yon tweet be too long, doeth shorteneth yon story")
-      $('#display-error').show("slow");
+      $('#display-error').show("slow").slideDown()
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide()
       })
     } 
     
-    $.post("/tweets", serializedData, (response) => {
-      $tweetx.val("").empty();
-      console.log(response);
-      console.log('form was submitted');
-      loadTweets()
-    })
+    if(tweetlength <= 140) {
+      $.post("/tweets", serializedData, (response) => {
+        $tweetx.val("").empty();
+        console.log(response);
+        console.log('form was submitted');
+        loadTweets()
+      })
+    }
   })
   
 });

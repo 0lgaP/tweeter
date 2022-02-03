@@ -48,8 +48,11 @@
     
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <br>
       <section>
+        <div class="upper-tweet">
+          <div id="display-error">
+          </div>
+        </div>
         <div class="upper-tweet">
           <form action="/tweets" method="post" id="new-tweet-form">
             <label for="textarea">What are you humming about?</label>
@@ -60,8 +63,6 @@
             <output name="counter" class="counter" id="output" for="tweet-text">140</output>
           </footer>
         </form>
-        <div id="display-error">
-        </div>
       </section>
       <section>
         <article class="old-tweet">
