@@ -53,6 +53,8 @@ i {
   nav {
    background-color: #4056A1;
    background-image: none;
+   padding: 2em;
+   font-size: 2rem;
 
   }
   .invisible {
