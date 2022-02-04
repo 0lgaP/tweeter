@@ -30,7 +30,6 @@ body {
   background-color: bisque;
 }
 
-
 @media only screen and (min-width: 1024px) {
 
   body {
@@ -42,7 +41,3 @@ body {
     width:60%;
   }
 }
-
-
-
-

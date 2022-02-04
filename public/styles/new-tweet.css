@@ -1,59 +1,42 @@
-/* Top to bottom */
+/* EFFECTS .........................................................................*/
 
-/* Container ...................................................................................*/
-div.none {
-  padding: 0%;
-}
-
-.new-tweet-container {
-  width: 95.5%;
-
-  /* padding:0.3em 0; */
-}
 .new-tweet-container:hover { 
   filter: drop-shadow(10px 10px 4px #444449);
 }
 
-/* section {
-  display: flex;
-  justify-content: center;
-} */
-
-/* NewTweet UPPER ..............................................................................*/
-
-/* ERROR HANDLING ...................................*/
-#display-error {
-
-/* width: 100%; */
-/* padding: 0.5em; */
-font-size: 1.3em;
-text-align: center;
-font-weight: bold;
-/* word-wrap:break-word; */
-border-radius: 1em;
-border: rgba(255, 0, 43, 0.425) solid 0.5rem;
-background:rgba(255, 0, 43, 0.377)
-
+i:hover {
+  color: #4056A1;
 }
+
+/* NEW TWEET CONTAINER.............................................................. */
+
+.new-tweet-container {
+  width: 95.5%;
+}
+
+/* ERROR HANDLING ....................................................................*/
+
+#display-error {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1em;
+  border: rgba(255, 0, 43, 0.425) solid 0.5rem;
+  background:rgba(255, 0, 43, 0.377)
+}
+
+/* UPPER TWEET....................................................................... */
 .upper-tweet {
   padding: 2% 0.5%;
-  /* display: flex; */
-  /* width: 100%; */
-  /* flex-direction: column;
-  align-items: baseline; */
   background-color: bisque;
 }
-
-
 
 label {
   font-weight: bold;
   font-size: 1.1em;
 }
 
-/* Textarea is special, 
-re-used css is needed here beccause 
-it is overriding defalt behaviours */
+/* Textarea is special, this css is overriding defalt.................................*/
 
 textarea {
   width: 100%;
@@ -64,13 +47,10 @@ textarea {
   outline: unset;
 }
 
-/* NewTweet LOWER..............................................................................*/
-
+/* NEW TWEET LOWER......................................................................*/
 .lower-tweet {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  /* background-color: bisque; */
   padding: 0.5% 2% 1%;
 }
 
@@ -90,36 +70,34 @@ button {
   font-weight: bold;
   color: rgb(155, 9, 9);
 }
+/* .....................................................................................*/
 
-/*OldTweet ..............................................................................*/
+
+/*OLD TWEET ............................................................................*/
 
 .old-tweet {
-  /* background-color: bisque; */
   padding: 2%;
-  /* display: flex; */
   width: 100%;
-  /* flex-direction: column;
-  align-items: baseline; */
+}
+
+.old-tweet div {
+  background-color: bisque;
+  padding: 2% 2% 0 2%;
+}
+
+.old-tweet footer {
+  background-color: bisque;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
 }
 
 .tweet-container{
-  /* display: flex;
-  flex-direction: column; */
   border: rgb(71, 36, 36) solid 4px;
   border-radius: 1em;
-  /* width: 100%; */
   margin-top: 1rem;
-}
-
-/* header > article.old-tweet {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%
-} */
-
-div.tweet-container:hover {
-  filter: drop-shadow(10px 10px 4px #444449);
 }
 
 .icon-holder {
@@ -135,7 +113,7 @@ div.tweet-container:hover {
 }
 
 .icon-holder span {
-  font-size: 2rem;
+  font-size: 1.3em;
 }
 
 .icon {
@@ -148,30 +126,3 @@ div.tweet-container:hover {
   width: 100%;
   overflow-wrap: break-word;
 }
-
-i:hover {
-  color: #4056A1;
-}
-
-.old-tweet div {
-  /* background-image: none; */
-  background-color: bisque;
-  padding: 2% 2% 0 2%;
-  /* height:unset;
-  justify-content: flex-start; */
-
-}
-
-.old-tweet footer {
-  background-color: bisque;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2%;
-
-}
-
-
-
-
