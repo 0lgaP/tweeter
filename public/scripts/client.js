@@ -62,11 +62,11 @@ const createTweetElement = (obj) => {
   </div>
   <footer>
   <span>${$time}</span>
-  <div>
+  <section>
   <i class="fa-solid fa-flag"></i>
   <i class="fa-solid fa-retweet"></i>
   <i class="fa-solid fa-heart"></i>
-  </div>
+  </section>
   </footer>
   </div>`
   return $tweet
@@ -97,8 +97,16 @@ const $form = $("#new-tweet-form");
 
     return $('#display-error').html(msg)
   }
+
+  //Strech.................................................//
   
+
+
+  $('.invisible').on("click", function(event) {
+    $('.new-tweet-container').toggle("slow")
+  })
   
+
   $form.on("submit", function(event) {
     event.preventDefault();
     const $tweetx = $('#tweet-text')

@@ -8,7 +8,6 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-  
 }
 
 
@@ -22,19 +21,17 @@ body {
   background-color:bisque ;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .container {
   display: flex;
-  /* align-items: flex-start; */
   flex-direction: column;
   align-items: center;
   background-color: bisque;
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
 
   body {
     display: flex;
@@ -47,7 +44,5 @@ body {
 }
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
 

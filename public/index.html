@@ -31,14 +31,14 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span class="white">Tweeter</span>
-      <div class="right-section">
-        <span class="white">
-          <strong>Write</strong>
-          a new tweet
-        </span>
-        <i class="fas fa-angle-double-down"></i>
-      </div>
+      <span>Tweeter</span>
+        <button class="invisible">
+          <span>
+            <strong>Write</strong>
+            a new tweet
+          </span>
+            <i class="fas fa-angle-double-down animation"></i>
+        </button>
     </nav>
     
     <header>
@@ -57,10 +57,10 @@
             <form action="/tweets" method="post" id="new-tweet-form">
               <label for="textarea">What are you humming about?</label>
               <textarea name="text" id="tweet-text"></textarea>
-              <footer class="lower-tweet"> 
-                <button type="submit" id="myButton">Tweet</button>
-                <output name="counter" class="counter" id="output" for="tweet-text">140</output>
-              </footer>
+                <footer class="lower-tweet"> 
+                  <button type="submit" id="myButton">Tweet</button>
+                  <output name="counter" class="counter" id="output" for="tweet-text">140</output>
+                </footer>
             </form>
           </div>
         </article>

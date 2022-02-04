@@ -1,36 +1,50 @@
 /* Top to bottom */
 
 /* Container ...................................................................................*/
-
-section {
-  align-items: center;
-  display: flex;
-  background-color: bisque;
-  width: 90%;
-  /* flex-direction: column;  */
+div.none {
+  padding: 0%;
 }
 
 .new-tweet-container {
   width: 95.5%;
-  padding:0.3em 0;
+
+  /* padding:0.3em 0; */
 }
 .new-tweet-container:hover { 
   filter: drop-shadow(10px 10px 4px #444449);
 }
 
+/* section {
+  display: flex;
+  justify-content: center;
+} */
+
 /* NewTweet UPPER ..............................................................................*/
+
+/* ERROR HANDLING ...................................*/
+#display-error {
+
+/* width: 100%; */
+/* padding: 0.5em; */
+font-size: 1.3em;
+text-align: center;
+font-weight: bold;
+/* word-wrap:break-word; */
+border-radius: 1em;
+border: rgba(255, 0, 43, 0.425) solid 0.5rem;
+background:rgba(255, 0, 43, 0.377)
+
+}
 .upper-tweet {
   padding: 2% 0.5%;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: baseline;
+  /* display: flex; */
+  /* width: 100%; */
+  /* flex-direction: column;
+  align-items: baseline; */
   background-color: bisque;
 }
 
-form {
-  width: 100%;
-}
+
 
 label {
   font-weight: bold;
@@ -53,10 +67,10 @@ textarea {
 /* NewTweet LOWER..............................................................................*/
 
 .lower-tweet {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  background-color: bisque;
+  /* background-color: bisque; */
   padding: 0.5% 2% 1%;
 }
 
@@ -80,28 +94,29 @@ button {
 /*OldTweet ..............................................................................*/
 
 .old-tweet {
-  background-color: bisque;
+  /* background-color: bisque; */
   padding: 2%;
-  display: flex;
+  /* display: flex; */
   width: 100%;
-  flex-direction: column;
-  align-items: baseline;
+  /* flex-direction: column;
+  align-items: baseline; */
 }
 
 .tweet-container{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   border: rgb(71, 36, 36) solid 4px;
-  width: 100%;
+  border-radius: 1em;
+  /* width: 100%; */
   margin-top: 1rem;
 }
 
-header > article.old-tweet {
+/* header > article.old-tweet {
  display: flex;
  justify-content: center;
  align-items: center;
  width: 100%
-}
+} */
 
 div.tweet-container:hover {
   filter: drop-shadow(10px 10px 4px #444449);
@@ -117,7 +132,6 @@ div.tweet-container:hover {
 .credentials {
   display: flex;
   align-items: center;
-
 }
 
 .icon-holder span {
@@ -140,51 +154,24 @@ i:hover {
 }
 
 .old-tweet div {
-  padding: 2% 2% 0 2%;
-  height:unset;
-  background-image: none;
+  /* background-image: none; */
   background-color: bisque;
-  justify-content: flex-start;
+  padding: 2% 2% 0 2%;
+  /* height:unset;
+  justify-content: flex-start; */
 
 }
 
 .old-tweet footer {
   background-color: bisque;
   display: flex;
-  justify-content: space-between;
-  padding: 2%;
   font-size: 20px;
-}
-
-
-/* ERROR HANDLING ...................................*/
-#display-error
-{
-
-width: 100%;
-padding: 0.5em;
-font-size: 1.3em;
-text-align: center;
-font-weight: bold;
-word-wrap:break-word;
-border-radius: 1em;
-border: rgba(255, 0, 43, 0.425) solid 0.5rem;
-background:rgba(255, 0, 43, 0.377)
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
 
 }
 
-/* Tablet: minimum width of 768px to maximum width of 1024px */
-@media only screen and (min-width: 769px) {
-
-  section {
-    align-items: center;
-    display: flex;
-    width: 90%;
-    flex-direction: column; 
-  }
-  
-  
-}
 
 
 
