@@ -114,6 +114,7 @@ $(() => {
       $('#display-error').show("slow").slideDown();
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide();
+        return
       });
     }
     
@@ -122,6 +123,7 @@ $(() => {
       $('#display-error').show("slow").slideDown();
       $('#tweet-text').on('focus', () => {
         $('#display-error').hide();
+      
       });
     }
     
@@ -130,6 +132,7 @@ $(() => {
         $tweetx.val("").empty();
         console.log(response);
         console.log('form was submitted');
+        $('#output').val(140).addClass('counter')
         loadTweets();
       });
     }
