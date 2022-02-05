@@ -7,7 +7,7 @@ This repository is created from the starter code provided by LHL. The layout, fr
 
 ## Getting Started
 
-1. Clone this repository onto your local device.
+1. Clone this repository to your local device.
 2. Install dependencies using the `npm install` command.
 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 5. Go to <http://localhost:8080/> in your browser.
