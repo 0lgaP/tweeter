@@ -20,6 +20,7 @@ This repository is created from the starter code provided by LHL. The layout, fr
 - Timeago 4.0.2
 
 ## Sample Images
+![Gif of Tweeter functionality](https://raw.githubusercontent.com/0lgaP/tweeter/master/screenshots/Tweeter_video.gif)
 !["Tweeter on your desktop"](https://raw.githubusercontent.com/0lgaP/tweeter/master/screenshots/Tweeter_desktop.png) 
 !["Tweeter on mobile hiding the tweet bar"](https://raw.githubusercontent.com/0lgaP/tweeter/master/screenshots/Tweeter_mobile_hide.png)
 !["Tweeter handles errors with cute Unicode monkeys"](https://raw.githubusercontent.com/0lgaP/tweeter/master/screenshots/Tweeter_error.png)
