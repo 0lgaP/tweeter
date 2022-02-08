@@ -85,6 +85,9 @@ button {
   padding: 2% 2% 0 2%;
 }
 
+.old-tweet:hover{
+  filter: drop-shadow(10px 10px 4px #444449);
+}
 .old-tweet footer {
   background-color: bisque;
   display: flex;
@@ -98,6 +101,7 @@ button {
   border: rgb(71, 36, 36) solid 4px;
   border-radius: 1em;
   margin-top: 1rem;
+  
 }
 
 .icon-holder {

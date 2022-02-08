@@ -10,50 +10,47 @@ header {
     background-color: #d69822;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
-  
 .your-name {
     font-size: 1.5em;
     margin: 0;
     color: white;
 }
-  
 .profile-img {
     height: 55%;
     width: auto;
 }
-  
 @media only screen and (min-width: 1024px) {
 
-  body {
-      display: flex;
-      margin: 10rem 0 0 0;
-      justify-content: space-around;
-  }
+body {
+    display: flex;
+    margin: 10rem 0 0 0;
+    justify-content: space-around;
+}
 
-  header {
-      position: sticky;
-      top: 10em;
-      z-index: 0;
-      margin: 3vmin;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      height: 40vmin;
-      width: 40vmin;
-  }
+header {
+    position: sticky;
+    top: 10em;
+    z-index: 0;
+    margin: 3vmin;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vmin;
+    width: 40vmin;
+}
     
-  .your-name {
-      font-size: 5vmin;
-      margin: 0;
-      color: white;
-      padding-bottom: 0.2vmin;
-  }
+.your-name {
+    font-size: 5vmin;
+    margin: 0;
+    color: white;
+    padding-bottom: 0.2vmin;
+}
     
-  .profile-img {
-      margin-top: 2vmin;
-      height: auto;
-      width: relative;
-  }
+.profile-img {
+    margin-top: 2vmin;
+    height: auto;
+    width: relative;
+}
 }
 
 
