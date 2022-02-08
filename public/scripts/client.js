@@ -9,7 +9,6 @@ $(() => {
   //Hide Errors..........................................//
   $('#display-error').hide();
 
- 
   // LOAD TWEETS .......................................................................//
   const loadTweets = () => {
     $.ajax({
@@ -19,7 +18,6 @@ $(() => {
       success: (tweets) => {
         console.log("data:", tweets);
         renderTweets(tweets);
-       
       },
       error: (err) => {
         console.log(`there was an error: ${err}`);
@@ -105,29 +103,29 @@ $(() => {
   $form.on("submit", function(event) {
     event.preventDefault();
     const $tweetx = $('#tweet-text');
-    const tweetlength = $tweetx.val().length;
+    const tweetLength = $tweetx.val().length;
     
     const serializedData = $(this).serialize();
     
-    if ($tweetx.val() === "" || $tweetx.val() === null) {
+    if (!$tweetx.val()) {
       showError("&#x1f64a" + " Please type some words " + "&#x1f64a");
-      $('#display-error').show("slow").slideDown();
+      $('#display-error').slideDown();
       $('#tweet-text').on('focus', () => {
-        $('#display-error').hide();
+        $('#display-error').slideUp();
         return
       });
     }
     
-    if (tweetlength > 140) {
+    if (tweetLength > 140) {
       showError("&#128585" + " This story is too long " + "&#128585");
-      $('#display-error').show("slow").slideDown();
+      $('#display-error').slideDown();
       $('#tweet-text').on('focus', () => {
-        $('#display-error').hide();
+        $('#display-error').slideUp();
       
       });
     }
     
-    if (tweetlength <= 140) {
+    if (tweetLength <= 140) {
       $.post("/tweets", serializedData, (response) => {
         $tweetx.val("").empty();
         console.log(response);
