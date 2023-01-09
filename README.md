@@ -1,4 +1,5 @@
 # Tweeter Project
+![t3](https://user-images.githubusercontent.com/61428425/211401997-b752b7c2-af66-4a5b-91c5-3e30bbfd86d9.gif)
 
 Tweeter is a simple, single-page Twitter clone.
 Tweeter is responsive and adapts to your screen.
